@@ -1,11 +1,12 @@
-#import <Foundation/Foundation.h>
+//
+//  FSNetwork.h
+//  FSNetwork
+//
+//  Created by Filipe Souza on 14/03/20.
+//  Copyright © 2020 Filipe Souza. All rights reserved.
+//
 
-//! Project version number for FSNetwork.
+@import Foundation;
+
 FOUNDATION_EXPORT double FSNetworkVersionNumber;
-
-//! Project version string for FSNetwork.
 FOUNDATION_EXPORT const unsigned char FSNetworkVersionString[];
-
-// In this header, you should import all the public headers of your framework using statements like #import <FSNetwork/PublicHeader.h>
-
-

@@ -8,12 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		170F1084241D76B70036935C /* FSNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 170F1082241D76B70036935C /* FSNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		170F108B241D7FA60036935C /* ParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F108A241D7FA60036935C /* ParameterEncoder.swift */; };
+		170F108D241D7FE60036935C /* HTTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F108C241D7FE60036935C /* HTTP.swift */; };
+		170F108F241D802D0036935C /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F108E241D802D0036935C /* EndpointProtocol.swift */; };
+		170F1091241D805B0036935C /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F1090241D805B0036935C /* Router.swift */; };
+		170F1093241D80BD0036935C /* URLParameterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F1092241D80BD0036935C /* URLParameterEncoder.swift */; };
+		170F1095241D80DC0036935C /* JSONParamterEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170F1094241D80DC0036935C /* JSONParamterEncoder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		170F107F241D76B70036935C /* FSNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		170F1082241D76B70036935C /* FSNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSNetwork.h; sourceTree = "<group>"; };
 		170F1083241D76B70036935C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		170F108A241D7FA60036935C /* ParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterEncoder.swift; sourceTree = "<group>"; };
+		170F108C241D7FE60036935C /* HTTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTP.swift; sourceTree = "<group>"; };
+		170F108E241D802D0036935C /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		170F1090241D805B0036935C /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		170F1092241D80BD0036935C /* URLParameterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLParameterEncoder.swift; sourceTree = "<group>"; };
+		170F1094241D80DC0036935C /* JSONParamterEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParamterEncoder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +60,12 @@
 			children = (
 				170F1082241D76B70036935C /* FSNetwork.h */,
 				170F1083241D76B70036935C /* Info.plist */,
+				170F108A241D7FA60036935C /* ParameterEncoder.swift */,
+				170F108C241D7FE60036935C /* HTTP.swift */,
+				170F108E241D802D0036935C /* EndpointProtocol.swift */,
+				170F1090241D805B0036935C /* Router.swift */,
+				170F1092241D80BD0036935C /* URLParameterEncoder.swift */,
+				170F1094241D80DC0036935C /* JSONParamterEncoder.swift */,
 			);
 			path = FSNetwork;
 			sourceTree = "<group>";
@@ -95,6 +113,7 @@
 				TargetAttributes = {
 					170F107E241D76B70036935C = {
 						CreatedOnToolsVersion = 11.3.1;
+						LastSwiftMigration = 1130;
 					};
 				};
 			};
@@ -131,6 +150,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				170F1095241D80DC0036935C /* JSONParamterEncoder.swift in Sources */,
+				170F1091241D805B0036935C /* Router.swift in Sources */,
+				170F108F241D802D0036935C /* EndpointProtocol.swift in Sources */,
+				170F108B241D7FA60036935C /* ParameterEncoder.swift in Sources */,
+				170F1093241D80BD0036935C /* URLParameterEncoder.swift in Sources */,
+				170F108D241D7FE60036935C /* HTTP.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +285,7 @@
 		170F1088241D76B70036935C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -276,6 +302,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +311,7 @@
 		170F1089241D76B70036935C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
