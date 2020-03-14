@@ -1,19 +1,20 @@
-Pod::Spec.new do |spec|
+Pod::Spec.new do |s|
 
-  spec.name         = "FSNetwork"
-  spec.version      = "0.0.1"
-  spec.summary      = "A simple Swift network requester."
+  s.name            = "FSNetwork"
+  s.version         = "0.0.1"
+  s.summary         = "A simple Swift network requester."
 
-  spec.description  = <<-DESC
-			A simple Swift network requester
+  s.description     = <<-DESC
+			A simple Swift network requester for study purpose
                    DESC
 
-  spec.homepage     = "https://github.com/filipehsouza/FSNetwork"
-  spec.license      = { :type => "MIT", :file => "LICENSE" }
-  spec.author       = { "Filipe Souza" => "filipehsouza@hotmail.com" }
-  spec.platform     = :ios
-  spec.source       = { :git => "https://github.com/filipehsouza/FSNetwork.git", :tag => "#{spec.version}" }
+  s.homepage        = "https://github.com/filipehsouza/FSNetwork"
+  s.license         = { :type => "MIT", :file => "LICENSE" }
+  s.author          = { "Filipe Souza" => "filipehsouza@hotmail.com" }
+  s.platform        = :ios, 10.0
+  s.swift_versions  = '5.0'
+  s.source          = { :git => "https://github.com/filipehsouza/FSNetwork.git", :tag => "#{s.version}" }
 
-  spec.source_files  = "FSNetwork", "FSNetwork/**/*.{swift}"
+  s.source_files    = "FSNetwork", "FSNetwork/**/*.{swift}"
 
 end
